@@ -1,7 +1,8 @@
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class SumArray {
+public class AverageArray {
+
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
 
@@ -17,6 +18,7 @@ public class SumArray {
         for(int i=0;i<arr.length;i++){
             sum+=arr[i];
         }
-        System.out.println("The sum of the elements in the array is: " + sum);
-        }
+        int result=sum/n;
+        System.out.println("The average of the elements in the array is: " + result);
+    }
 }

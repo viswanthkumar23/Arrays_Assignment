@@ -13,16 +13,18 @@ public class MaxNumber {
         for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
         }
-        System.out.println(Arrays.toString(arr));
-        int maximum=arr[0];
-        int maximumIndex=0;
-        for(int i=0;i<arr.length;i++) {
-            if (arr[i] > maximum) {
-                maximum = arr[i];
-                maximumIndex = i;
+        int largest = arr[0];
+        int secondLargest = arr[0];
+
+        for (int i = 1; i < arr.length; i++) {
+            if (arr[i] > largest) {
+                secondLargest = largest;
+                largest = arr[i];
+            } else if (arr[i] > secondLargest && arr[i] != largest) {
+                secondLargest = arr[i];
             }
         }
-        System.out.println("The maximum number is: " +maximum);
-        System.out.println("The maximum number is: " +maximumIndex);
+        System.out.println("Largest Number: " + largest);
+        System.out.println("Second Largest Number: " + secondLargest);
     }
 }

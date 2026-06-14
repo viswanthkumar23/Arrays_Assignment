@@ -19,6 +19,6 @@ public class AverageArray {
             sum+=arr[i];
         }
         int result=sum/n;
-        System.out.println("The average of the elements in the array is: " + result);
+        System.out.println("The average of the elements in the array is:" + result);
     }
 }

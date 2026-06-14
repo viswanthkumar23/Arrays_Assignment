@@ -13,6 +13,7 @@ public class MaxNumber {
         for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
         }
+        System.out.println(Arrays.toString(arr));
         int largest = arr[0];
         int secondLargest = arr[0];
 
